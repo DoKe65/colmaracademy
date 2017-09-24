@@ -4,6 +4,30 @@ html {
   color: #4a4a4a;
 }
 
+h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2.95rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+p,
+.infotext a {
+  font-weight: 300;
+  line-height: 1.4;
+  font-size: 1.1rem;
+}
+
 .flex {
   display: flex; 
 }
@@ -31,7 +55,7 @@ header {
   top: 0;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid red;
+  font-size: 1.1rem;
 }
 
 .logo {
@@ -43,7 +67,6 @@ header {
 }
 
 .logo img {
-  height: 100%
   width: auto;
   padding-left: 1.5rem;
 }
@@ -67,13 +90,14 @@ nav ul li a {
 
 .jumbotron {
   position: relative;
-  margin-top: 64px;
+  margin-top: 4rem;
   background-color: #d8d8d8;
   justify-content: flex-start;
+  padding: 2rem 1.5rem;
 }
 
 .jumbotron .jbtimg {
-  margin: 2rem 1.5rem;
+ /* margin: 2rem 1.5rem;*/
   flex-grow: 1;
   flex-basis: 60%;
 }
@@ -83,23 +107,18 @@ nav ul li a {
 }
 
 .jumbotron .start {
-  margin: 2rem 0 2rem 0;
+  margin: 2rem 0 2rem 1.5rem;
   justify-content: center;
   flex-basis: 40%;
-  padding-right: 3rem; 
+  /*padding-right: 3rem; */
 }
 
 .jumbotron .start h1 {
-  font-size: 3.2rem;
-  font-weight: 700;
-  line-height: 1.2;
   margin-bottom: 5%;
+  padding-right: 3rem;
 }
 
 .jumbotron .start h3 {
-  font-size: 1.7rem;
-  font-weight: 500;
-  line-height: 1.4;
   margin-bottom: 10%;
   max-width: 24rem;
 }
@@ -119,6 +138,75 @@ nav ul li a {
 
 #campus {
   background-color: #f3f5f5;
+  justify-content: flex-start;
+  padding-left: 1.5rem;
+}
+
+.lead {
+  flex-grow: 1;
+  flex-basis: 45%;
+  padding: 2rem 0;
+}
+
+.lead img {
+  width: 100%;
+}
+
+.lead h2 {
+  margin: 2rem 0 1.5rem 0;
+}
+
+.source {
+  font-family: "Playfair-Display";
+  font-weight: 400; 
+  /*font-style: italic;*/
+  margin-top: 2rem;
+}
+
+.infos {
+  margin-left: 1.5rem;
+  flex-basis: 40%;
+  border-left: 1px solid #d8d8d8;
+  padding-top: 1rem;
+}
+
+.info {
+  padding: 1rem 1rem 1rem 0;
+}
+
+.infos .info:first-child {
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.infos .info:last-child {
+  background-color: #d8d8d8;
+}
+
+.infoimg {
+  flex-basis: 35%;
+  height: auto;
+  padding-left: 1rem;
+  padding-right: 1.5rem;
+}
+
+.infoimg img {
+  width: 100%;
+  height: auto;
+}
+
+.infotext {
+  flex-basis: 65%;
+  justify-content: center;
+}
+
+.infotext h3,
+.infotext p {
+  margin-bottom: 0.5rem;
+}
+
+.infotext a {
+  text-decoration: none;
+  color: #69f;
 }
 
 /* color of last-child and borders: #d8d8d8; */
