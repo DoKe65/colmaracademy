@@ -209,13 +209,57 @@ nav ul li a {
   color: #69f;
 }
 
-/* color of last-child and borders: #d8d8d8; */
-
 /* Courses-Section */
 
 #courses {
   background-color: #eaebec;
-  margin: 2rem 4.5rem;
+  padding: 2rem 3.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#courses h2 {
+  margin-bottom: 1rem;
+}
+
+.featured {
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.course {
+  background-color: white;
+  margin: 0 1rem;
+  /*flex-basis: 30rem: */
+  /*height: 100%;*/
+  /*width: 100rem;*/
+  justify-content: flex-start;
+  max-width: 532px;
+}
+
+.courseimg {
+  height: 100%;
+  display: block;
+}
+
+.courseimg img {
+  height: auto;
+  width: 100%;
+}
+
+.coursetext {
+  display: block;
+  padding: 1rem;
+  min-height: 100%;
+}
+
+.coursetext h3,
+.coursetext p {
+  margin-top: 0.5rem;
+}
+
+.coursetext p:last-child {
+  margin-bottom: 1.5rem;
 }
 
 /* Thesis-Section */
