@@ -44,6 +44,18 @@ p,
   display: none;
 }
 
+/* Header and Footer-Nav */
+
+nav {
+  padding-right: 1.5rem;
+}
+
+nav ul li a {
+  padding-left: 1rem;
+  text-decoration: none;
+  color: black;
+}
+
 /* Header-Section */
 
 header {
@@ -76,16 +88,6 @@ header {
   font-weight: 300;
 }
 
-nav {
-  padding-right: 1.5rem;
-}
-
-nav ul li a {
-  padding-left: 1rem;
-  text-decoration: none;
-  color: black;
-}
-
 /* Jumbotron-Section */
 
 .jumbotron {
@@ -97,7 +99,6 @@ nav ul li a {
 }
 
 .jumbotron .jbtimg {
- /* margin: 2rem 1.5rem;*/
   flex-grow: 1;
   flex-basis: 60%;
 }
@@ -110,7 +111,6 @@ nav ul li a {
   margin: 2rem 0 2rem 1.5rem;
   justify-content: center;
   flex-basis: 40%;
-  /*padding-right: 3rem; */
 }
 
 .jumbotron .start h1 {
@@ -125,7 +125,7 @@ nav ul li a {
 
 .btn {
   background-color: #4a4a4a;
-  color: white;
+  color: #fff;
   font-size: 1.7rem;
   font-weight: 300;
   padding: 0.5rem;
@@ -134,13 +134,7 @@ nav ul li a {
   margin-bottom: 0.2rem;
 }
 
-/* Campus-Section */
-
-#campus {
-  background-color: #f3f5f5;
-  justify-content: flex-start;
-  padding-left: 1.5rem;
-}
+/* Main-Content */
 
 .lead {
   flex-grow: 1;
@@ -148,19 +142,9 @@ nav ul li a {
   padding: 2rem 0;
 }
 
-.lead img {
+.lead img,
+.lead video {
   width: 100%;
-}
-
-.lead h2 {
-  margin: 2rem 0 1.5rem 0;
-}
-
-.source {
-  font-family: "Playfair-Display";
-  font-weight: 400; 
-  /*font-style: italic;*/
-  margin-top: 2rem;
 }
 
 .infos {
@@ -172,14 +156,6 @@ nav ul li a {
 
 .info {
   padding: 1rem 1rem 1rem 0;
-}
-
-.infos .info:first-child {
-  border-bottom: 1px solid #d8d8d8;
-}
-
-.infos .info:last-child {
-  background-color: #d8d8d8;
 }
 
 .infoimg {
@@ -204,7 +180,33 @@ nav ul li a {
   margin-bottom: 0.5rem;
 }
 
-.infotext a {
+/* Campus-Section */
+
+#campus {
+  background-color: #f3f5f5;
+  justify-content: flex-start;
+  padding-left: 1.5rem;
+}
+
+.lead h2 {
+  margin: 2rem 0 1.5rem 0;
+}
+
+.source {
+  font-family: "Playfair-Display";
+  font-weight: 400; 
+  margin-top: 2rem;
+}
+
+#campus .infos .info:first-child {
+  border-bottom: 1px solid #d8d8d8;
+}
+
+#campus .infos .info:last-child {
+  background-color: #d8d8d8;
+}
+
+#campus .infotext a {
   text-decoration: none;
   color: #69f;
 }
@@ -228,11 +230,8 @@ nav ul li a {
 }
 
 .course {
-  background-color: white;
+  background-color: #fff;
   margin: 0 1rem;
-  /*flex-basis: 30rem: */
-  /*height: 100%;*/
-  /*width: 100rem;*/
   justify-content: flex-start;
   max-width: 532px;
 }
@@ -270,14 +269,6 @@ nav ul li a {
   align-items: center;
 }
 
-.lead video {
-  width: 100%;
-}
-
-#thesis h3 {
-  margin-bottom: 1rem;
-}
-
 .thesiscontent {
   justify-content: flex-start;
   padding-left: 1.5rem;
@@ -295,12 +286,6 @@ nav ul li a {
 .thesiscontent .infos .info:first-child {
   background-color: #d8d8d8;
 }
-
-.thesiscontent .infos .info:last-child {
-  background-color: transparent;
-}
-
-/* Background-Color First child right side: #d8d8d8; */
 
 /* Footer-Section */
 
