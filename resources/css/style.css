@@ -92,14 +92,15 @@ p,
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px),
+ (max-device-width: 767px) {
   .desktop {
     display: none;
   }
 
   .mobile {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     width: 100%;
   }
 
@@ -109,7 +110,7 @@ p,
   }
 
   ul img {
-    height: 2rem;
+    height: 3rem;
   }
 
   .logo {
@@ -161,7 +162,7 @@ header {
 }
 
 .logo p span:last-child {
-  color: #d8d8d8;
+  color: #ccc;
   font-weight: 300;
 }
 
