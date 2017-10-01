@@ -320,6 +320,10 @@ footer {
   padding: 1rem 0 3rem 1.5rem;
 }
 
+i {
+  margin: 0 0.5rem;
+}
+
 /* Media-Queries */
 
 @media only screen and (max-width: 1130px) {
@@ -511,10 +515,16 @@ footer {
     padding: 1rem 0 1.5rem 1rem;
   }
 
+  .course:hover {
+    background-color: #9cf;
+  }
+
   .course .courseimg,
   .course p {
     display: none;
   }
+
+}
 
   /* Thesis-Section */
 
