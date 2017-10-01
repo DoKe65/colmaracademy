@@ -1,3 +1,9 @@
+/* General styles */
+
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 16px;
   font-family: "Hind Vadodara", Arial, sans-serif;
@@ -30,6 +36,7 @@ p,
 
 .flex {
   display: flex; 
+  max-width: 100%;
 }
 
 .row {
@@ -40,9 +47,246 @@ p,
   flex-direction: column;
 }
 
-.mobile {
+.mobile,
+.mobileimg {
   display: none;
 }
+
+
+/* Header and Footer-Nav */
+
+nav {
+  padding-right: 1.5rem;
+}
+
+nav ul li a {
+  padding-left: 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a:hover {
+
+}
+
+
+/* Header-Section */
+
+header {
+  background-color: #fff;
+  height: 4rem;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.1rem;
+}
+
+.logo {
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Hind Siliguri";
+  font-weight: 700;
+  padding-right: auto;
+}
+
+.logo img {
+  width: auto;
+  padding-left: 1.5rem;
+}
+
+.logo p span:last-child {
+  color: #ccc;
+  font-weight: 300;
+}
+
+/* Main-Content */
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+.jumbotron .jbtimg,
+.lead {
+  flex-grow: 1;
+  flex-basis: 60%;
+  margin: 2rem 1.5rem;
+}
+
+.lead h2 {
+  margin: 2rem 0 1.5rem 0;
+}
+
+.jumbotron .start,
+.infos {
+  flex-basis: 40%;
+}
+
+.infos {
+  margin: 0;
+  padding-top: 1rem;
+}
+
+.info {
+  padding: 1rem 0;
+}
+
+.infoimg {
+  flex-basis: 35%;
+  height: auto;
+  padding: 0 1rem;
+}
+
+.infoimg img {
+  width: 100%;
+  height: auto;
+}
+
+.infotext {
+  flex-basis: 65%;
+  justify-content: center;
+}
+
+.infotext h3,
+.infotext p {
+  margin-bottom: 0.5rem;
+  max-width: 95%;
+}
+
+/* Jumbotron-Section */
+
+.jumbotron {
+  margin-top: 4rem;
+  background-color: #d8d8d8;
+  align-items: center;
+}
+
+.jumbotron .start h1,
+.jumbotron .start h3,
+.btn {
+  margin-bottom: 2rem;
+  max-width: 95%;
+}
+
+.btn {
+  background-color: #4a4a4a;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 300;
+  padding: 0.5rem;
+  border: none;
+  margin-bottom: 0rem;
+}
+
+/* Campus-Section */
+
+#campus {
+  background-color: #f3f5f5;
+}
+
+.source {
+  font-family: Nunito;
+  font-weight: 400; 
+  margin-top: 2rem;
+  font-style: italic;
+}
+
+#campus .infos {
+  border-left: 1px solid #d8d8d8;
+}
+
+#campus .infos .info:first-child {
+  border-bottom: 1px solid #d8d8d8;
+}
+
+#campus .infos .info:last-child {
+  background-color: #d8d8d8;
+}
+
+#campus .infotext a {
+  text-decoration: none;
+  color: #69f;
+}
+
+/* Courses-Section */
+
+#courses {
+  background-color: #eaebec;
+  padding: 2rem 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#courses h2 {
+  margin-bottom: 1rem;
+}
+
+.course {
+  background-color: #fff;
+  margin: 1rem;
+  justify-content: flex-start;
+  max-width: 532px;
+}
+
+.courseimg {
+  height: 100%;
+  display: block;
+}
+
+.courseimg img {
+  height: auto;
+  width: 100%;
+}
+
+.coursetext {
+  display: block;
+  padding: 1rem;
+  min-height: 100%;
+}
+
+.coursetext h3,
+.coursetext p {
+  margin-top: 0.5rem;
+}
+
+.coursetext p:last-child {
+  margin-bottom: 1.5rem;
+}
+
+/* Thesis-Section */
+
+#thesis {
+  background-color: #f3f5f5;
+  padding-top: 2rem;
+  align-items: center;
+}
+
+.lead h3 {
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+.thesiscontent .infos {
+  margin-top: 1rem;
+}
+
+.thesiscontent .infos .info:first-child {
+  background-color: #d8d8d8;
+}
+
+/* Footer-Section */
+
+footer {
+  width: 100%;
+  border-top: 1px solid #d8d8d8;
+  background-color: #f3f5f5;
+  justify-content: space-between;
+  padding: 1rem 0 3rem 1.5rem;
+}
+
+/* Media-Queries */
 
 @media only screen and (max-width: 1130px) {
   p,
@@ -92,8 +336,10 @@ p,
   }
 }
 
-@media only screen and (max-width: 767px),
- (max-device-width: 767px) {
+@media only screen and (max-device-width: 767px) {
+
+  /* General */
+
   .desktop {
     display: none;
   }
@@ -103,6 +349,28 @@ p,
     justify-content: center;
     width: 100%;
   }
+
+  h1 {
+  font-size: 5rem;
+  line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+    line-height: 1.4;
+  }
+
+  p,
+  .infotext a {
+    line-height: 1.4;
+    font-size: 2.4rem;
+  }
+
+  /* Navigation */
 
   ul {
     width: 100%;
@@ -116,317 +384,133 @@ p,
   .logo {
     display: none;
   }
-}
 
-/* Header and Footer-Nav */
-
-nav {
-  padding-right: 1.5rem;
-}
-
-nav ul li a {
-  padding-left: 1rem;
-  text-decoration: none;
-  color: black;
-}
-
-nav ul li a:hover {
-
-}
-
-/* Header-Section */
-
-header {
-  background-color: #fff;
-  height: 4rem;
-  width: 100%;
-  position: fixed;
-  z-index: 5;
-  top: 0;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 1.1rem;
-}
-
-.logo {
-  align-items: center;
-  justify-content: flex-start;
-  font-family: "Hind Siliguri";
-  font-weight: 700;
-  padding-right: auto;
-}
-
-.logo img {
-  width: auto;
-  padding-left: 1.5rem;
-}
-
-.logo p span:last-child {
-  color: #ccc;
-  font-weight: 300;
-}
-
-/* Jumbotron-Section */
-
-.jumbotron {
-  position: relative;
-  margin-top: 4rem;
-  background-color: #d8d8d8;
-  justify-content: flex-start;
-  padding: 2rem 1.5rem;
-}
-
-.jumbotron .jbtimg {
-  flex-grow: 1;
-  flex-basis: 60%;
-}
-
-.jumbotron img {
-  width: 100%;
-}
-
-.jumbotron .start {
-  margin: 2rem 0 2rem 1.5rem;
-  justify-content: center;
-  flex-basis: 40%;
-}
-
-.jumbotron .start h1 {
-  margin-bottom: 5%;
-  padding-right: 3rem;
-}
-
-.jumbotron .start h3 {
-  margin-bottom: 10%;
-  max-width: 24rem;
-}
-
-.btn {
-  background-color: #4a4a4a;
-  color: #fff;
-  font-size: 1.7rem;
-  font-weight: 300;
-  padding: 0.5rem;
-  border: none;
-  max-width: 24rem;
-  margin-bottom: 0rem;
-}
-
-@media only screen and (max-width: 875px) {
+  /* Jumbotron */
+  
+  .jumbotron {
+    flex-direction: column;
+    padding: 0;
+  }
 
   .jumbotron .start {
-    margin: 0 0 0 1.5rem;
-    justify-content: center;
-    flex-basis: 40%;
+    margin: 2rem 1rem;
   }
-
-  .jumbotron .start h1 {
-    padding-right: 1rem;
-  }
-
+  
+  .jumbotron .start h1,
   .jumbotron .start h3 {
-    margin-bottom: 5%;
+    margin-bottom: 2rem;
+    max-width: 100%;
   }
 
   .btn {
-    font-size: 1.1rem;
+    font-size: 3rem;
+    max-width: 100%;
+    height: 6rem;
+    background-color: #868686;
+  }
+
+  /* Campus-Section */
+
+  @media only screen and (max-device-width: 767px) {
+
+  #campus .lead,
+  #campus .infoimg .desktop {
+    display: none;
+  }
+
+  #campus {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  #campus .infos {
     border: none;
-    max-width: 20rem;
-    margin-bottom: 0;
+  } 
+
+  #campus .info {
+    flex-direction: column;
+    padding: 0;
+    border: none;
   }
-}
 
-/* Main-Content */
-
-.lead {
-  flex-grow: 1;
-  flex-basis: 45%;
-  padding: 2rem 0;
-}
-
-.lead img,
-.lead video {
-  width: 100%;
-}
-
-.infos {
-  margin-left: 1.5rem;
-  flex-basis: 40%;
-  border-left: 1px solid #d8d8d8;
-  padding-top: 1rem;
-}
-
-.info {
-  padding: 1rem 1rem 1rem 0;
-}
-
-.infoimg {
-  flex-basis: 35%;
-  height: auto;
-  padding-left: 1rem;
-  padding-right: 1.5rem;
-}
-
-.infoimg img {
-  width: 100%;
-  height: auto;
-}
-
-.infotext {
-  flex-basis: 65%;
-  justify-content: center;
-}
-
-.infotext h3,
-.infotext p {
-  margin-bottom: 0.5rem;
-}
-
-@media only screen and (max-width: 875px) {
-  .infoimg {
-    padding-right: 1rem;
+  .infoimg .mobileimg {
+    display: block;
   }
-}  
 
-/* Campus-Section */
-
-#campus {
-  background-color: #f3f5f5;
-  justify-content: flex-start;
-  padding-left: 1.5rem;
-}
-
-.lead h2 {
-  margin: 2rem 0 1.5rem 0;
-}
-
-.source {
-  font-family: Nunito;
-  font-weight: 400; 
-  margin-top: 2rem;
-  font-style: italic;
-}
-
-#campus .infos .info:first-child {
-  border-bottom: 1px solid #d8d8d8;
-}
-
-#campus .infos .info:last-child {
-  background-color: #d8d8d8;
-}
-
-#campus .infotext a {
-  text-decoration: none;
-  color: #69f;
-}
-
-@media only screen and (max-width: 1052px) {
-  #campus .infos .info:first-child .infotext p {
-    max-width: 11rem;
+  .infotext {
+    padding: 2rem 2rem 4rem 2rem;
   }
-}
 
-/* Courses-Section */
+  #campus .info:last-child .infotext {
+    padding-bottom: 2rem;
+  }
 
-#courses {
-  background-color: #eaebec;
-  padding: 2rem 3.5rem;
-  align-items: center;
-  justify-content: center;
-}
+  #campus .infos .info:last-child {
+    background-color: transparent;
+  }
 
-#courses h2 {
-  margin-bottom: 1rem;
-}
-
-.featured {
-  justify-content: center;
-  margin: 1rem 0;
-}
-
-.course {
-  background-color: #fff;
-  margin: 0 1rem;
-  justify-content: flex-start;
-  max-width: 532px;
-}
-
-.courseimg {
-  height: 100%;
-  display: block;
-}
-
-.courseimg img {
-  height: auto;
-  width: 100%;
-}
-
-.coursetext {
-  display: block;
-  padding: 1rem;
-  min-height: 100%;
-}
-
-.coursetext h3,
-.coursetext p {
-  margin-top: 0.5rem;
-}
-
-.coursetext p:last-child {
-  margin-bottom: 1.5rem;
-}
-
-@media only screen and (max-width: 875px) {
+  /* Courses-Section */
+  
   #courses {
+    background-color: #f8f8f8;
     padding: 2rem 1rem;
   }
 
-  .course {
-    margin: 0 0.5rem;
-    justify-content: flex-start;
-    max-width: 532px;
+  #courses h2 {
+    margin: 1rem;
   }
+
+  .featured {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .course {
+    background-color: #eaebec;
+    max-width: 100%;
+    margin: 0.5rem;
+    justify-content: stretch;
+  }
+
+  .coursetext h3 {
+    padding: 1rem 0 1.5rem 1rem;
+  }
+
+  .course .courseimg,
+  .course p {
+    display: none;
+  }
+
+  /* Thesis-Section */
+
+  #thesis {
+    padding: 2rem 0rem 1.5rem 0;
+  }
+
+  #thesis .lead h3,
+  #thesis .lead p,
+  #thesis .infos {
+    display: none;
+  }
+
+  #thesis .lead {
+    padding: 1rem 0 0 0;
+    margin: 0 0 1rem 0;
+  }
+
+  /* Footer-Section */
+    
+    footer {
+      border: none;
+      padding: 1rem;
+    }
+
+    footer nav {
+      display: none;
+    }
 }
 
 
-/* Thesis-Section */
-
-#thesis {
-  background-color: #f3f5f5;
-  padding-top: 2rem;
-  align-items: center;
-}
-
-.thesiscontent {
-  justify-content: flex-start;
-  padding-left: 1.5rem;
-}
-
-.lead h3 {
-  margin: 2rem 0 0.5rem 0;
-}
-
-.thesiscontent .infos {
-  border-left: none;
-  margin-top: 1rem;
-}
-
-.thesiscontent .infos .info:first-child {
-  background-color: #d8d8d8;
-}
-
-/* Footer-Section */
-
-footer {
-  width: 100%;
-  border-top: 1px solid #d8d8d8;
-  background-color: #f3f5f5;
-  justify-content: space-between;
-  padding: 1rem 1.5rem 3rem 1.5rem;
-}
-
-footer span {
-  margin-left: 1.5rem;
-}
 
 
