@@ -56,19 +56,27 @@ p,
 /* Header and Footer-Nav */
 
 nav {
-  padding-right: 1.5rem;
+  padding-right: 1rem;
 }
 
 nav ul li a {
-  padding-left: 1rem;
+  padding: 0.5rem;
   text-decoration: none;
   color: black;
 }
 
 nav ul li a:hover {
-
+  border-radius: 5%; 
+  box-shadow: 2px 2px 5px #d8d8d8;
+  font-size: 1.2rem;
+  color: #69f;
+  transition: box-shadow 250ms ease-in,
+  color 100ms ease-in, font-size 250ms;
 }
 
+nav ul li a:active {
+  color: #6cf; 
+}
 
 /* Header-Section */
 
@@ -181,6 +189,19 @@ img, video {
   margin-bottom: 0rem;
 }
 
+.btn:hover {
+  padding: 0.3rem;
+  background-color: hsla(240, 100%, 50%, 0.7);
+  transform: rotate(-15deg);
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+  transition: all 500ms ease-in;
+}
+
+.btn:active {
+  color: #6cf ;
+}
+
 /* Campus-Section */
 
 #campus {
@@ -206,10 +227,23 @@ img, video {
   background-color: #d8d8d8;
 }
 
-#campus .infotext a {
+.infotext a {
   text-decoration: none;
   color: #69f;
 }
+
+.infotext a:hover {
+  color: #03c;
+  background: linear-gradient(to right, #9cf, transparent);
+  font-size: 1.4rem;
+  padding-left: 1rem;
+  transition: font-size 500ms linear;
+}
+
+.infotext a:active {
+  color: #000;
+}
+
 
 /* Courses-Section */
 
