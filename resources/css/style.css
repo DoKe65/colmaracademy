@@ -553,6 +553,10 @@ footer {
     footer nav {
       display: none;
     }
+
+    footer span {
+      font-size: 0.8rem;
+    }
 }
 
 
