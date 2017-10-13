@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Colmar Academy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="resources/imgs/ic-logo.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="resources/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
@@ -11,21 +12,24 @@
 </head>
 <body>
   <!-- Header Section -->
-	<header class="flex row">
-    <div class="logo flex row desktop">
+	<header class="flex-row">
+    <div class="logo flex-row desktop">
       <img class="logo" src="resources/imgs/ic-logo.svg" alt="Colmar-Academy Logo">
-      <p><span>COLMAR</span><span>ACADEMY</span></p>
+      <p>
+        <span>COLMAR</span>
+        <span>ACADEMY</span>
+      </p>
     </div>
-   <nav class="flex row desktop">
-    <ul class="flex row" aria-label="presentation">
+   <nav class="flex-row desktop">
+    <ul class="flex-row" aria-label="presentation">
       <li><a href="#campus">On campus</a></li>
       <li><a href="#courses">Online</a></li>
       <li><a href="#thesis">For companies</a></li>
       <li><a href="#">Sign in</a></li>
     </ul>
    </nav>
-   <nav class="flex row mobile">
-     <ul class="flex row" aria-label="presentation">
+   <nav class="flex-row mobile">
+     <ul class="flex-row" aria-label="presentation">
       <li><img src="resources/imgs/ic-logo.svg" alt="Colmar-Academy Logo"></li>
       <li><a href="#campus"><img src="resources/imgs/ic-on-campus.svg" alt="On Campus"></a></li>
       <li><a href="#courses"><img src="resources/imgs/ic-online.svg" alt="Online"></a></li>
@@ -38,11 +42,11 @@
 	
 		
     <!-- Jumbotron-Section -->
-    <div class="jumbotron flex row">
+    <div class="jumbotron flex-row">
       <div class="jbtimg">
         <img src="resources/imgs/banner.jpg" alt="Learning students">
       </div>
-      <div class="start flex column">
+      <div class="start flex-column">
         <h1>Learn something new everyday</h1>
         <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
         <button class="btn">Start here</button>
@@ -50,7 +54,7 @@
     </div>
     
     <!-- Campus-Section -->
-    <div id="campus" class="flex row">
+    <div id="campus" class="flex-row">
       <div class="lead">
         <div class="leadimg">
           <img src="resources/imgs/information-main.jpg">
@@ -59,26 +63,35 @@
         <blockquote>&quot;Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula.&quot;</blockquote>
         <p class="source">Emanuel, Sr Strategist at Hiring.com</p>
       </div>
-      <div class="infos flex column">
-        <div class="info flex row">
-          <div class="infoimg"><img class="desktop" src="resources/imgs/information-orientation.jpg" alt="People on a path"><img class="mobileimg" src="resources/imgs/information-orientation-mobile.jpg" alt="People on a path"></div>
-          <div class="infotext flex column">
+      <div class="infos flex-column">
+        <div class="info flex-row">
+          <div class="info-img">
+            <img class="desktop" src="resources/imgs/information-orientation.jpg" alt="People on a path">
+            <img class="mobileimg" src="resources/imgs/information-orientation-mobile.jpg" alt="People on a path">
+          </div>
+          <div class="info-text flex-column">
             <h3>Orientation date</h3>
             <p>Tue 10 &frasl; 11 &amp; Wed 10 &frasl; 12: 8am-3pm</p>
             <a href="#">Read more</a>
           </div>
         </div>
-        <div class="info flex row">
-          <div class="infoimg"><img class="desktop" src="resources/imgs/information-campus.jpg" alt="Study-Room"><img class="mobileimg" src="resources/imgs/information-campus-mobile.jpg" alt="Study-Room"></div>
-          <div class="infotext flex column">
+        <div class="info flex-row">
+          <div class="info-img">
+            <img class="desktop" src="resources/imgs/information-campus.jpg" alt="Study-Room">
+            <img class="mobileimg" src="resources/imgs/information-campus-mobile.jpg" alt="Study-Room">
+          </div>
+          <div class="info-text flex-column">
             <h3>Our campus</h3>
             <p>Find which campus is close by you</p>
             <a href="#">Read more</a>
           </div>
         </div>
-        <div class="info flex row">
-          <div class="infoimg"><img class="desktop" src="resources/imgs/information-guest-lecture.jpg" alt="Mister Oliver Sack"><img class="mobileimg" src="resources/imgs/information-guest-lecture-mobile.jpg" alt="Mister Oliver Sack"></div>
-          <div class="infotext flex column">
+        <div class="info flex-row">
+          <div class="info-img">
+            <img class="desktop" src="resources/imgs/information-guest-lecture.jpg" alt="Mister Oliver Sack">
+            <img class="mobileimg" src="resources/imgs/information-guest-lecture-mobile.jpg" alt="Mister Oliver Sack">
+          </div>
+          <div class="info-text flex-column">
             <h3>Our guest lecture</h3>
             <p>Join a keynote with Oliver Sack about music in medical treatment</p>
             <a href="#">Read more</a>
@@ -88,66 +101,66 @@
     </div>
 
     <!-- Courses-Section -->
-    <div id="courses" class="flex column">
+    <div id="courses" class="flex-column">
       <h2>Start learning</h2>
-      <div class="featured flex row">
-        <div class="course flex column">
-          <div class="courseimg">
+      <div class="featured flex-row">
+        <div class="course flex-column">
+          <div class="course-img">
             <img src="resources/imgs/course-software.jpg">
           </div>
-          <div class="coursetext">
+          <div class="course-text">
             <h3>Software engineering</h3>
             <p>COURSES</p>
             <p>Web Development, Mobile Development, iOT, APIs</p>
           </div>
         </div>
-        <div class="course flex column">
-          <div class="courseimg">
+        <div class="course flex-column">
+          <div class="course-img">
             <img src="resources/imgs/course-computer-art.jpg">
           </div>
-          <div class="coursetext">
+          <div class="course-text">
             <h3>Computer art</h3>
             <p>COURSES</p>
             <p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
           </div>
         </div>
-        <div class="course flex column">
-          <div class="courseimg">
+        <div class="course flex-column">
+          <div class="course-img">
             <img src="resources/imgs/course-design.jpg">
           </div>
-          <div class="coursetext">
+          <div class="course-text">
             <h3>Design</h3>
             <p>COURSES</p>
             <p>User Experience Design, User Research, Visual Design</p>
           </div>
         </div>
       </div>
-      <div class="featured flex row">
-        <div class="course flex column">
-          <div class="courseimg">
+      <div class="featured flex-row">
+        <div class="course flex-column">
+          <div class="course-img">
             <img src="resources/imgs/course-data.jpg">
           </div>
-          <div class="coursetext">
+          <div class="course-text">
             <h3>Data</h3>
             <p>COURSES</p>
             <p>Data Science, Big Data, SQL, Data Visualization</p>
           </div>
         </div>
-        <div class="course flex column">
-          <div class="courseimg">
+        <div class="course flex-column">
+          <div class="course-img">
             <img src="resources/imgs/course-business.jpg">
           </div>
-          <div class="coursetext">
+          <div class="course-text">
             <h3>Business</h3>
             <p>COURSES</p>
             <p>Product Development, Business Development, Startup</p>
           </div>
         </div>
-        <div class="course flex column">
-          <div class="courseimg">
+        <div class="course flex-column">
+          <div class="course-img">
             <img src="resources/imgs/course-marketing.jpg">
           </div>
-          <div class="coursetext">
+          <div class="course-text">
             <h3>Marketing</h3>
             <p>COURSES</p>
             <p>Analytics, Content Merketing, Mobile Marketing</p>
@@ -157,9 +170,9 @@
     </div>
 
     <!-- Thesis-Section -->
-    <div id="thesis" class="flex column">
+    <div id="thesis" class="flex-column">
       <h2>Thesis exhibit</h2>
-      <div class="thesiscontent flex row">
+      <div class="thesis-content flex-row">
       <div class="lead">
         <div class="video">
             <video src="resources/videos/thesis.mp4" controls>
@@ -169,17 +182,21 @@
         <h3>Reimagine urban</h3>
         <blockquote>&quot;Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula.&quot;</blockquote>
       </div>
-      <div class="infos flex column">
-        <div class="info flex row">
-          <div class="infoimg"><img src="resources/imgs/thesis-fisma.jpg" alt="Thesis Fisma"></div>
-          <div class="infotext flex column">
+      <div class="infos flex-column">
+        <div class="info flex-row">
+          <div class="info-img">
+            <img src="resources/imgs/thesis-fisma.jpg" alt="Thesis Fisma">
+          </div>
+          <div class="info-text flex-column">
             <h3>Fisma: Design and Prototype</h3>
             <p>Designer showcase of new prototype product</p>
           </div>
         </div>
-        <div class="info flex row">
-          <div class="infoimg"><img src="resources/imgs/thesis-now-and-then.jpg" alt="Picture of New-York"></div>
-          <div class="infotext flex column">
+        <div class="info flex-row">
+          <div class="info-img">
+            <img src="resources/imgs/thesis-now-and-then.jpg" alt="Picture of New-York">
+          </div>
+          <div class="info-text flex-column">
             <h3>Now and then</h3>
             <p>Research study about New York</p>
           </div>
@@ -187,11 +204,11 @@
       </div>
     </div>
 
-  <footer class="flex row">
+  <footer class="flex-row">
     <span class="copyright">&copy; 2017 Colmar Academy. All rights reserved</span>
     <span class="social"><i class="fa fa-facebook fa-lg"></i><i class="fa fa-twitter fa-lg"></i><i class="fa fa-github fa-lg"></i></span>
     <nav>
-      <ul class="flex row" aria-label="presentation">
+      <ul class="flex-row" aria-label="presentation">
         <li><a href="#">Terms</a></li>
         <li><a href="#">Privacy</a></li>
       </ul>
